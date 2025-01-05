@@ -17,22 +17,5 @@
 
 body {
   font-family: $fs-family;
-  background-image: url('@/assets/images/bg-intro-desktop.png');
-  background-repeat: no-repeat;
-  background-position: center -75px;
-  background-size: auto calc(100% + 75px);
-
-  @media screen and (min-width: 1024px) {
-    background-position: center top;
-    background-size: auto 100%;
-  }
 }
 
-.error-message {
-  @extend %error;
-  color: clr('red', 400);
-}
-
-.foot-note {
-  @extend %foot-note;
-}
