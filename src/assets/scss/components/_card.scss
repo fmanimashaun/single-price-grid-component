@@ -11,9 +11,45 @@
 	box-shadow: $box-shadwo-1;
 
 	@media screen and (min-width: 768px) {
-		flex-direction: row;
 		border-radius: $border-radius-1;
 		max-width: 635px;
 		margin-inline: auto;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+		}
+
+		&-price {
+			flex-basis: 100%;
+
+			@media screen and (min-width: 768px) {
+				flex-basis: 50%;
+			}
+		}
+
+		&-about {
+			position: relative;
+			flex-basis: 100%;
+
+			@media screen and (min-width: 768px) {
+				flex-basis: 50%;
+			}
+
+
+			&::after {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(clr('light', 100), 0.2);
+			}
+		}
 	}
 }
