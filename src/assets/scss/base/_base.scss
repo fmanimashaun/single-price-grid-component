@@ -1,0 +1,38 @@
+@use '../abstract/variables' as *;
+@use '../abstract/functions' as *;
+@use '../abstract/placeholder';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  // Font Size (Base set to 16px for easy scaling)
+  font-size: 16px;
+}
+
+body {
+  font-family: $fs-family;
+  background-image: url('@/assets/images/bg-intro-desktop.png');
+  background-repeat: no-repeat;
+  background-position: center -75px;
+  background-size: auto calc(100% + 75px);
+
+  @media screen and (min-width: 1024px) {
+    background-position: center top;
+    background-size: auto 100%;
+  }
+}
+
+.error-message {
+  @extend %error;
+  color: clr('red', 400);
+}
+
+.foot-note {
+  @extend %foot-note;
+}
