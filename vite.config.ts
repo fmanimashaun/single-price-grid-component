@@ -3,7 +3,7 @@ import path from 'path';
 import htmlPurge from 'vite-plugin-purgecss'
 
 export default defineConfig({
-  base: '/intro-component-with-signup-form/',
+  base: '/single-price-grid-component/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

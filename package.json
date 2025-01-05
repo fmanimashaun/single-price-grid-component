@@ -1,9 +1,9 @@
 {
-  "name": "intro-component-with-signup-form",
+  "name": "single-price-grid-component",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/fmanimashaun/intro-component-with-signup-form",
+  "homepage": "https://github.com/fmanimashaun/single-price-grid-component",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
