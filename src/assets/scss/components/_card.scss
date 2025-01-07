@@ -44,6 +44,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		border-radius: 0 0 $border-radius-2 $border-radius-2;
 
 		& > * {
 			padding-block: $card-block-2;
@@ -51,6 +52,7 @@
 
 		@media screen and (min-width: 768px) {
 			flex-direction: row;
+			border-radius: 0 0 $border-radius-1 $border-radius-1;
 		}
 	}
 
