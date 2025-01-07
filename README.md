@@ -31,8 +31,6 @@ Users should be able to:
 
 <img src="./screenshot/desktop.png" alt="Desktop Image" width="1440px">
 
-<img src="./screenshot/desktop-active.png" alt="Desktop Image" width="1440px">
-
 - Mobile
 
 <img src="./screenshot/mobile.png" alt="Mobile Image" width="375px">
@@ -55,8 +53,6 @@ Users should be able to:
 - GitHub Pages for deployment
 
 ### What I learned
-
-Clear all error when the input field get re-focused after submission. Javascript was essentially used to manage the form states.
 
 In the styling part, I break the UI into manageable components and use as many utilities classes as possible to reduce the amount of custom styling. However, I purge the final css of all unused utility classes to ensure the final css is as small as possible.
 
@@ -114,31 +110,6 @@ In the styling part, I break the UI into manageable components and use as many u
 		}
 	}
 }
-```
-
-```ts
-// Add event listener on the form to remove invalid classes from all inputs when any input is focused
-formEl.addEventListener('focusin', (e) => {
-	// Check if the event target is an input
-	if (e.target instanceof HTMLInputElement) {
-		const inputs = formEl.querySelectorAll('input') as NodeListOf<HTMLInputElement>;
-		const errors = formEl.querySelectorAll('.error-message') as NodeListOf<HTMLElement>;
-
-		// Loop through all input elements and remove invalid classes from all
-		inputs.forEach((input) => {
-			input.classList.remove('invalid');
-			if (input.parentElement) {
-				input.parentElement.classList.remove('invalid');
-			}
-		});
-
-	// Update error messages on the form
-	errors.forEach((error) => {
-		error.innerText = '';
-	});
-	}
-});
-
 ```
 
 ### Continued development
