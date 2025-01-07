@@ -35,3 +35,8 @@ $border-radius-2: 0.3125rem;
 //shadow
 $box-shadwo-1: 0 15px 30px 0 rgba(0, 81, 171, 0.15);
 $box-shadwo-2: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+
+//spacing
+$card-block-1: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem) clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+$card-block-2: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+$card-inline: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
